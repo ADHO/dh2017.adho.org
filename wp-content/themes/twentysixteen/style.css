@@ -4024,3 +4024,20 @@ p > video {
 		padding: 0;
 	}
 }
+
+
+/* Added by Simon <simonjwiles@gmail.com> 2020/12/10 */
+a[href*="www.conftool.pro/dh2017"] {
+	text-decoration: line-through;
+}
+
+a[href*="www.conftool.pro/dh2017"]:after {
+	background: yellow;
+	content: "The DH2017 ConfTool site is no longer available.";
+	display: none;
+	position: absolute;
+}
+
+a[href*="www.conftool.pro/dh2017"]:hover:after {
+	display: block;
+}
